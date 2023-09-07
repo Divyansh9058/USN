@@ -111,7 +111,7 @@ textarea {
 button[type=submit] {
   height: 54px;
   border: none;
-  background: #9f8054;
+  background: #890000;
   color: #fff;
   padding: 0 30px;
   font-size: 13px;
@@ -171,7 +171,7 @@ button[type=submit] {
   font-weight: 600;
 }
 .accordion .card .card-header a:hover {
-  color: #9f8054;
+  color: #890000;
   text-decoration: none;
 }
 .accordion .card .card-body {
@@ -180,11 +180,11 @@ button[type=submit] {
   line-height: 26px;
 }
 .accordion .card [aria-expanded=true] {
-  color: #9f8054 !important;
+  color: #890000 !important;
 }
 .accordion .card [aria-expanded=true]:before {
   content: "-" !important;
-  color: #9f8054 !important;
+  color: #890000 !important;
 }
 
 /* PAGINATION */
@@ -196,14 +196,14 @@ button[type=submit] {
   margin-right: 6px;
 }
 .pagination .page-item.active .page-link {
-  background: #9f8054;
+  background: #890000;
   color: #fff;
   border-color: transparent;
   position: relative;
   z-index: 2;
 }
 .pagination .page-item.active .page-link:hover {
-  background: #9f8054;
+  background: #890000;
   border-color: transparent;
   color: #fff;
 }
@@ -220,7 +220,7 @@ button[type=submit] {
 .pagination .page-item .page-link:hover {
   background: none;
   border-color: #dee2e6;
-  color: #9f8054;
+  
 }
 
 /* GALLERY SLIDER*/
@@ -967,7 +967,7 @@ button[type=submit] {
 }
 .slider .slider-container .swiper-slide .container a:hover {
   text-decoration: none;
-  background: #9f8054;
+  background: #890000;
   border-color: #9f8054;
 }
 .slider .slider-container .swiper-slide .container figure {
