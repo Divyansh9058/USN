@@ -721,8 +721,9 @@ button[type=submit] {
 .navbar .container .upper-side .logo {
   margin-left: 0;
 }
-.navbar .container .upper-side .logo img {
-  /* height: 48px; */
+.navbar .container .upper-side .logo img:nth-child(1) {
+  height: 198px;
+  border: 2px solid red;
 }
 .navbar .container .upper-side .phone-email {
   margin-right: 0;
@@ -906,11 +907,11 @@ button[type=submit] {
   left: 0;
   top: 0;
   background: #26282b;
-  background: -moz-linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
-  background: -webkit-linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
-  background: linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
+  background: -moz-linear-gradient(161deg, #000000 0%, #000000 49%, #9f8054 100%);
+  background: -webkit-linear-gradient(161deg, #000000 0%, #000000 49%, #9f8054 100%);
+  background: linear-gradient(161deg, #000000 0%, #000000 49%, #9f8054 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26282b",endColorstr="#9f8054",GradientType=1);
-  opacity: 0.65;
+  opacity: 0.85;
 }
 .slider .slider-container .swiper-slide .container {
   position: relative;
