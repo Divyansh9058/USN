@@ -706,7 +706,6 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
   align-items: center;
   transform: translateY(-80px);
   -webkit-transition: all 0.5s ease;
@@ -722,8 +721,8 @@ button[type=submit] {
   margin-left: 0;
 }
 .navbar .container .upper-side .logo img:nth-child(1) {
-  height: 198px;
-  border: 2px solid red;
+  /* height: 198px;
+  border: 2px solid red; */
 }
 .navbar .container .upper-side .phone-email {
   margin-right: 0;
