@@ -1133,6 +1133,7 @@ button[type=submit] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26282b",endColorstr="#9f8054",GradientType=1);
   opacity: 0.65;
 }
+/* page header styles  */
 .page-header .container {
   position: relative;
   z-index: 2;
