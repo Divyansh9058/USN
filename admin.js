@@ -1,4 +1,10 @@
 // Script for fetching and populating contact data
+const token = sessionStorage.getItem("token");
+    const email = sessionStorage.getItem("email");
+    if (!token || email !== "info@usnbuilders.com") {
+        window.location.href = "./login.html";
+    }
+
 document.addEventListener('DOMContentLoaded', () => {
     const contactTable = document.querySelector('.main_admin_content_contact_table table tbody');
   
