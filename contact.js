@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             body: JSON.stringify(data),
           }
         );
-  console.log(response)
+  // console.log(response)
         if (response.status === 200) {
           // Successfully sent
           alert("Message sent successfully!");
