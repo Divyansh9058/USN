@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message,
         status: "acnt",
       };
-  console.log(data);
+  // console.log(data);
       // Send the data to the API using a POST request
       try {
         const response = await fetch(
