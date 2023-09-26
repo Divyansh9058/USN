@@ -333,8 +333,8 @@ button[type=submit] {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height:80px;
   border-radius: inherit;
   scale: 0;
   z-index: -1;
