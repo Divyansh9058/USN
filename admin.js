@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <option value="acnt">Action Not Taken</option>
             <option value="act">Action Taken</option>
           </select>
-        </td>
+        </td> 
       `;
   
       // Set the background color based on the status

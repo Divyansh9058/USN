@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message,
         status: "acnt",
       };
-  console.log(data);
+  // console.log(data);
       // Send the data to the API using a POST request
       try {
         const response = await fetch(
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
             body: JSON.stringify(data),
           }
         );
-  console.log(response)
+  // console.log(response)
         if (response.status === 200) {
           // Successfully sent
           alert("Message sent successfully!");
