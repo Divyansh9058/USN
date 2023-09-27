@@ -4,7 +4,19 @@ const token = sessionStorage.getItem("token");
     if (!token || email !== "info@usnbuilders.com") {
         window.location.href = "./login.html";
     }
+     //logout  function
+    let logoutbtn=document.getElementById("logout_btn");
 
+    logoutbtn.addEventListener("click",(event) => {
+      sessionStorage.removeItem("token");
+      sessionStorage.removeItem("email");
+      setTimeout(function() {
+        window.location.href = 'index.html';
+      }, 1000);
+    })
+
+
+    
 document.addEventListener('DOMContentLoaded', () => {
     const contactTable = document.querySelector('.main_admin_content_contact_table table tbody');
   

@@ -70,44 +70,53 @@
     width: 100%;
     text-align: center;
 }
-
-/* .main_admin_content_contact_table th:nth-child(1),
-.main_admin_content_contact_table td:nth-child(1) {
-    width: 20px;
+.table_switch_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.switch_buttons{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    margin: 10px;  
 
-.main_admin_content_contact_table th:nth-child(2),
-.main_admin_content_contact_table td:nth-child(2) {
-    padding: 0;
+}
+.switch_buttons::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
     width: 80px;
-}
-
-.main_admin_content_contact_table th:nth-child(3),
-.main_admin_content_contact_table td:nth-child(3) {
-    padding: 0;
-    width: 80px;
-}
-
-.main_admin_content_contact_table th:nth-child(4),
-.main_admin_content_contact_table td:nth-child(4) {
-    padding: 0;
-    width: 100px;
-}
-
-.main_admin_content_contact_table th:nth-child(5),
-.main_admin_content_contact_table td:nth-child(5) {
-    padding: 0;
-    width: 110px;
-    overflow: auto;
-}
-
-.main_admin_content_contact_table th:nth-child(6),
-.main_admin_content_contact_table td:nth-child(6) {
-    padding: 0;
-    width: 180px;
-    overflow: auto;
-} */
-
+    height:80px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.9s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .switch_buttons:hover::before {
+    scale: 3;
+  }
+  
+  .switch_buttons:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .switch_buttons:active {
+    scale: 1;
+  }
 
 @media only screen and (max-width: 800px) {
     .banner-content h2 {

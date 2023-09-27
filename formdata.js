@@ -1,10 +1,20 @@
 // Script for fetching and populating contact data
-// const token = sessionStorage.getItem("token");
-//     const email = sessionStorage.getItem("email");
-//     if (!token || email !== "info@usnbuilders.com") {
-//         window.location.href = "./login.html";
-//     }
+const token = sessionStorage.getItem("token");
+    const email = sessionStorage.getItem("email");
+    if (!token || email !== "info@usnbuilders.com") {
+        window.location.href = "./login.html";
+    }
 
+    //logout  function
+let logoutbtn=document.getElementById("logout_btn");
+
+logoutbtn.addEventListener("click",(event) => {
+  sessionStorage.removeItem("token");
+  sessionStorage.removeItem("email");
+  setTimeout(function() {
+    window.location.href = 'index.html';
+  }, 1000);
+})
 document.addEventListener('DOMContentLoaded', () => {
     const contactTable = document.querySelector('.main_admin_content_contact_table table tbody');
   
@@ -17,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${data.finaltime}</td>
         <td>${data.name}</td>
         <td>${data.phone}</td>
+        <td>
           <select class="Contact_us_Action" data-contact-id="${data._id}">
             <option value="acnt">Action Not Taken</option>
             <option value="act">Action Taken</option>
@@ -39,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
           "https://dark-pink-eagle-tux.cyclic.cloud/pdfdata/"
         );
         const contactData = await response.json();
-          console.log(contactData);
+  
         // Add table rows for each contact entry
         contactData.reverse().forEach((data, index) => {
           contactTable.appendChild(createContactTableRow(data, index));
