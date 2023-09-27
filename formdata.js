@@ -15,6 +15,13 @@ logoutbtn.addEventListener("click",(event) => {
     window.location.href = 'index.html';
   }, 1000);
 })
+
+// contact_table_btn table navigation
+let contact_table_btn=document.getElementById("contact_table_btn");
+contact_table_btn.addEventListener("click",(event) => {
+  window.location.href = "./admin.html";
+})
+
 document.addEventListener('DOMContentLoaded', () => {
     const contactTable = document.querySelector('.main_admin_content_contact_table table tbody');
   

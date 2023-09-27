@@ -14,9 +14,12 @@ const token = sessionStorage.getItem("token");
         window.location.href = 'index.html';
       }, 1000);
     })
+// pop-up table navigation
+    let pop_up_btn=document.getElementById("pop-form-btn");
+    pop_up_btn.addEventListener("click",(event) => {
+      window.location.href = "./formdata.html";
+    })
 
-
-    
 document.addEventListener('DOMContentLoaded', () => {
     const contactTable = document.querySelector('.main_admin_content_contact_table table tbody');
   
