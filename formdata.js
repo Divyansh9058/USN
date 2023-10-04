@@ -65,7 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
         contactTable.appendChild(createContactTableRow(data, index));
       });
     } catch (error) {
-      console.error("Error:", error);
+      // console.error("Error:", error);
+      alert("Error:", error); 
       // Handle error states if necessary
     }
   };
