@@ -27,7 +27,6 @@ loginForm.addEventListener('submit', async (e) => {
       },
       body: JSON.stringify(loginData),
     });
-
     if (response.status === 200) {
       const data = await response.json();
       const { token } = data;
