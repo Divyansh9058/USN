@@ -32,7 +32,7 @@ loginForm.addEventListener('submit', async (e) => {
       const { token } = data;
       sessionStorage.setItem("token", token);
       sessionStorage.setItem("email", email);
-      // Redirect to the admin page or perform any other action here
+      // Redirect to the admin page or perform any other action here3
       window.location.href = "./admin.html";
     } else if (response.status === 201) {
       const data = await response.json();
